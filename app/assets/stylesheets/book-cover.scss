@@ -1,0 +1,138 @@
+body{
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+table th, table td {
+  // border: solid 1px black;
+  background-color: black;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ルーラー＆横幅の設定
+.lateral-roler{
+  td{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-top: none;
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+  }
+  // 横のサイズ設定
+  .left-wrap{
+    width: 187.5px;
+  }
+  .left-margin{
+    width: 47px;
+  }
+  .front-cover{
+    width: 445px;
+  }
+  .right-margin{
+    width: 47px
+  }
+  .back-cover{
+    width: 66px;
+  }
+  .behind-cover{
+    width: 539px;
+  }
+  .right-wrap{
+    width: 187.5px;
+  }
+}
+
+// ルーラー＆縦幅の設定
+.vertical-roler{
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-left: none;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+}
+.top-wrap{
+  height: 187.5px;
+}
+.top-margin{
+  height: 94px;
+}
+.title{
+  height: 141px;
+  &__block{
+    text-align: center;
+    border-bottom: 5px solid white;
+  }
+}
+.front-margin{
+  text-align: center;
+  height: 282px;
+  &__td{
+    flex-direction: column;
+    line-height: 66px;
+    div{
+      font-size: 2.5rem;
+      height: 2.5rem;
+      color: white;
+      writing-mode: vertical-rl;
+      -webkit-writing-mode: vertical-rl;
+      text-orientation: sideways;
+    }
+  }
+}
+.front-number{
+  height: 141px;
+  &__block{
+    text-align: right;
+  }
+}
+.back-number{
+  height: 93.75px;
+  &__block{
+    text-align: center;
+    border-top: 3px solid white;
+  }
+}
+.bottom-margin{
+  height: 75px;
+}
+.bottom-wrap{
+  height: 187.5px;
+}
+
+
+// タイトル文字
+.front-title{
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: white;
+}
+
+.title__back{
+  display: inline-block;
+  height: 282px;
+  writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-rl;
+  -o-writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  white-space: nowrap;
+  text-orientation: upright;
+  -webkit-text-combine: horizontal;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  color: white;
+}
+.front-number__span{
+  font-size: 5rem;
+  margin-right: 50px;
+  color: white;
+}
+.back-number__span{
+  font-size: 2rem;
+  color: white;
+}
