@@ -1,0 +1,106 @@
+$inner-shadow:  inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 100px auto;
+
+
+  &__preview{
+    width: 600px;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e9ec;
+    box-shadow: $inner-shadow;
+
+    &--table{
+      color: gray;
+      font-size: 0.9rem;
+      text-align: center;
+      
+      // ルーラー＆横幅の設定
+      .lateral-roler{
+        
+        // 横のサイズ設定
+        .left-wrap    { width: 60px;  }
+        .left-margin  { width: 20px;  border: none; }
+        .front-cover  { width: 150px; border: none; }
+        .right-margin { width: 20px   }
+        .back-cover   { width: 30px;  }
+        .behind-cover { width: 170px; }
+        .right-wrap   { width: 60px;  }
+      }
+    
+      // ルーラー＆縦幅の設定
+      .top-wrap{
+        height: 60px;
+      }
+      .top-margin{
+        height: 30px;
+      }
+      .title{
+        height: 30px;
+        &__block{
+          text-align: center;
+          border-bottom: 2px solid white;
+        }
+        &__td{
+          flex-direction: column;
+          text-align: center;
+          div{
+            font-size: 0.7rem;
+            height: 1rem;
+            line-height: 3rem;
+            color: white;
+            margin-bottom: 3px;
+          }
+        }
+      }
+      .front-margin{
+        text-align: center;
+        height: 90px;
+      }
+      .front-number{
+        height: 50px;
+        &__block{
+          text-align: right;
+        }
+      }
+      .back-number{
+        height: 30px;
+        &__block{
+          text-align: center;
+          border-top: 2px solid white;
+        }
+      }
+      .bottom-margin{
+        height: 25px;
+      }
+      .bottom-wrap{
+        height: 60px;
+      }
+    
+      // タイトル文字
+      #front-title{
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+        text-align: center;
+        color: white;
+        white-space: nowrap;
+      }
+    
+      .front-number__span{
+        font-size: 2rem;
+        margin-right: 0px;
+        color: white;
+      }
+      .back-number__span{
+        font-size: 1rem;
+        color: white;
+      }
+    }
+  }
+}

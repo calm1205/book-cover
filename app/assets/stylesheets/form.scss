@@ -1,0 +1,103 @@
+$thema-color: #e4e9ec;
+$inner-shadow:  inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+$button-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+$radio-shadow: 3px 3px 3px #cdd2d4, -2px -2px 3px #fbffff;
+
+.form{
+  display: flex;
+  justify-content: space-between;
+  &__box{
+    width: 300px;
+    p{
+      color: gray;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    &--input{
+      margin-bottom: 20px;
+      color: gray;
+      label{
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+        &.debug{
+          font-weight: normal;
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border-radius: 1rem;
+          background-color: #e4e9ec;
+          box-shadow: $button-shadow;
+        }
+      }
+      input{
+        width: 200px;
+        height: 30px;
+        border-radius: 1rem;
+        padding: 5px 10px;
+        border: none;
+        color: gray;
+        background-color: #e4e9ec;
+        box-shadow: $inner-shadow;
+        &:focus{
+          outline: none;
+        }
+      }
+      input[type='checkbox']{
+        display: none;
+
+        &:checked ~ label{
+          box-shadow: $inner-shadow;
+        }
+      }
+    }
+    &--radio{
+      width: 220px;
+      display: flex;
+      justify-content: space-between;
+      color: gray;
+      margin-bottom: 20px;
+        label{
+          width: 100px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 1rem;
+          text-align: center;
+          background-color: $thema-color;
+          box-shadow: $button-shadow;
+          letter-spacing: 1px;
+          &:hover{
+            cursor: pointer;
+          }
+        }
+        .selected{
+          box-shadow: $inner-shadow;
+        }
+        input{
+          display: none;
+        }
+    }
+  }
+
+}
+
+.submit{
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #e4e9ec;
+  border-radius: 1rem;
+  color: gray;
+  letter-spacing: 1px;
+  font-weight: bold;
+  box-shadow: $button-shadow;
+  outline: none;
+  &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+  }
+}
