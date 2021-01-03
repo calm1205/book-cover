@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'covers#index'
-  draw(:pdf)
+  post 'pdf', to: 'covers#pdf'
 end

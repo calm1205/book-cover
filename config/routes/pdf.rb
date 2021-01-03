@@ -1,1 +1,0 @@
-get 'pdf', to: 'covers#pdf'
