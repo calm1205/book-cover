@@ -1,0 +1,125 @@
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__box {
+  width: 300px;
+}
+
+.form__box p {
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__box--input {
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.form__box--input label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.form__box--input label.debug {
+  font-weight: normal;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+          box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+}
+
+.form__box--input input {
+  width: 200px;
+  height: 30px;
+  border-radius: 1rem;
+  padding: 5px 10px;
+  border: none;
+  color: gray;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.form__box--input input:focus {
+  outline: none;
+}
+
+.form__box--input input[type='checkbox'] {
+  display: none;
+}
+
+.form__box--input input[type='checkbox']:checked ~ label {
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.form__box--radio {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.form__box--radio label {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+          box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+  letter-spacing: 1px;
+}
+
+.form__box--radio label:hover {
+  cursor: pointer;
+}
+
+.form__box--radio .selected {
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.form__box--radio input {
+  display: none;
+}
+
+.submit {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #e4e9ec;
+  border-radius: 1rem;
+  color: gray;
+  letter-spacing: 1px;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+          box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+  outline: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=form.css.map */

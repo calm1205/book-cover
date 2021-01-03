@@ -1,0 +1,146 @@
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.main__preview {
+  width: 600px;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.main__preview--table {
+  color: gray;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.main__preview--table .lateral-roler .left-wrap {
+  width: 60px;
+}
+
+.main__preview--table .lateral-roler .left-margin {
+  width: 20px;
+  border: none;
+}
+
+.main__preview--table .lateral-roler .front-cover {
+  width: 150px;
+  border: none;
+}
+
+.main__preview--table .lateral-roler .right-margin {
+  width: 20px;
+}
+
+.main__preview--table .lateral-roler .back-cover {
+  width: 30px;
+}
+
+.main__preview--table .lateral-roler .behind-cover {
+  width: 170px;
+}
+
+.main__preview--table .lateral-roler .right-wrap {
+  width: 60px;
+}
+
+.main__preview--table .top-wrap {
+  height: 60px;
+}
+
+.main__preview--table .top-margin {
+  height: 30px;
+}
+
+.main__preview--table .title {
+  height: 30px;
+}
+
+.main__preview--table .title__block {
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+.main__preview--table .title__td {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main__preview--table .title__td div {
+  font-size: 0.7rem;
+  height: 1rem;
+  line-height: 3rem;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.main__preview--table .front-margin {
+  text-align: center;
+  height: 90px;
+}
+
+.main__preview--table .front-number {
+  height: 50px;
+}
+
+.main__preview--table .front-number__block {
+  text-align: right;
+}
+
+.main__preview--table .back-number {
+  height: 30px;
+}
+
+.main__preview--table .back-number__block {
+  text-align: center;
+  border-top: 2px solid white;
+}
+
+.main__preview--table .bottom-margin {
+  height: 25px;
+}
+
+.main__preview--table .bottom-wrap {
+  height: 60px;
+}
+
+.main__preview--table #front-title {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+}
+
+.main__preview--table .front-number__span {
+  font-size: 2rem;
+  margin-right: 0px;
+  color: white;
+}
+
+.main__preview--table .back-number__span {
+  font-size: 1rem;
+  color: white;
+}
+/*# sourceMappingURL=book-cover-preview.css.map */

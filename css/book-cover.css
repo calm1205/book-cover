@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+}
+
+.original-body {
+  background-color: white;
+}
+
+.page-break {
+  display: block;
+  clear: both;
+  page-break-after: always;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: black;
+}
+
+table td {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lateral-roler td {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-top: none;
+  border-right: solid 1px lightgray;
+  color: lightgray;
+  text-align: center;
+}
+
+.lateral-roler .left-wrap {
+  width: 189px;
+}
+
+.lateral-roler .left-margin {
+  width: 47px;
+}
+
+.lateral-roler .front-cover {
+  width: 447px;
+}
+
+.lateral-roler .right-margin {
+  width: 47px;
+}
+
+.lateral-roler .back-cover {
+  width: 66px;
+}
+
+.lateral-roler .behind-cover {
+  width: 545px;
+}
+
+.lateral-roler .right-wrap {
+  width: 189px;
+}
+
+.vertical-roler {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-left: none;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  color: lightgray;
+  text-align: center;
+}
+
+.top-wrap {
+  height: 187.5px;
+}
+
+.top-margin {
+  height: 94px;
+}
+
+.title {
+  height: 141px;
+}
+
+.title__block {
+  text-align: center;
+  border-bottom: 5px solid white;
+}
+
+.title__td {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.title__td div {
+  font-size: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.front-margin {
+  text-align: center;
+  height: 282px;
+}
+
+.front-number {
+  height: 141px;
+}
+
+.front-number__block {
+  text-align: right;
+}
+
+.front-number__span {
+  font-size: 5rem;
+  margin-right: 50px;
+  color: white;
+}
+
+.back-number {
+  height: 93.75px;
+}
+
+.back-number__block {
+  text-align: center;
+  border-top: 3px solid white;
+}
+
+.back-number__span {
+  font-size: 3rem;
+  color: white;
+}
+
+.bottom-margin {
+  height: 75px;
+}
+
+.bottom-wrap {
+  height: 187.5px;
+}
+
+.front-title {
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: white;
+}
+/*# sourceMappingURL=book-cover.css.map */
