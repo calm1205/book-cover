@@ -1,0 +1,601 @@
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+html {
+  color: #000;
+  background: #FFF;
+  font-size: 62.5%;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+  vertical-align: bottom;
+}
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+main {
+  padding-top: 70px;
+}
+
+body {
+  margin: 0;
+}
+
+.original-body {
+  background-color: white;
+}
+
+.page-break {
+  display: block;
+  clear: both;
+  page-break-after: always;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: black;
+}
+
+table td {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.lateral-roler td {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-top: none;
+  border-right: solid 1px lightgray;
+  color: lightgray;
+  text-align: center;
+}
+
+.lateral-roler .left-wrap {
+  width: 189px;
+}
+
+.lateral-roler .left-margin {
+  width: 47px;
+}
+
+.lateral-roler .front-cover {
+  width: 447px;
+}
+
+.lateral-roler .right-margin {
+  width: 47px;
+}
+
+.lateral-roler .back-cover {
+  width: 66px;
+}
+
+.lateral-roler .behind-cover {
+  width: 545px;
+}
+
+.lateral-roler .right-wrap {
+  width: 189px;
+}
+
+.vertical-roler {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-left: none;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  color: lightgray;
+  text-align: center;
+}
+
+.top-wrap {
+  height: 187.5px;
+}
+
+.top-margin {
+  height: 94px;
+}
+
+.title {
+  height: 141px;
+}
+
+.title__block {
+  text-align: center;
+  border-bottom: 5px solid white;
+}
+
+.title__td {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  line-height: 6rem;
+}
+
+.title__td div {
+  font-size: 2.5rem;
+  height: 2.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.front-margin {
+  text-align: center;
+  height: 282px;
+}
+
+.front-number {
+  height: 141px;
+}
+
+.front-number__block {
+  text-align: right;
+}
+
+.front-number__span {
+  font-size: 5rem;
+  margin-right: 50px;
+  color: white;
+}
+
+.back-number {
+  height: 93.75px;
+}
+
+.back-number__block {
+  text-align: center;
+  border-top: 3px solid white;
+}
+
+.back-number__span {
+  font-size: 3rem;
+  color: white;
+}
+
+.bottom-margin {
+  height: 75px;
+}
+
+.bottom-wrap {
+  height: 187.5px;
+}
+
+.front-title {
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: white;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.main__preview {
+  width: 600px;
+  height: 460px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.main__preview--table {
+  color: gray;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.main__preview--table .lateral-roler .left-wrap {
+  width: 60px;
+}
+
+.main__preview--table .lateral-roler .left-margin {
+  width: 20px;
+  border: none;
+}
+
+.main__preview--table .lateral-roler .front-cover {
+  width: 150px;
+  border: none;
+}
+
+.main__preview--table .lateral-roler .right-margin {
+  width: 20px;
+}
+
+.main__preview--table .lateral-roler .back-cover {
+  width: 30px;
+}
+
+.main__preview--table .lateral-roler .behind-cover {
+  width: 170px;
+}
+
+.main__preview--table .lateral-roler .right-wrap {
+  width: 60px;
+}
+
+.main__preview--table .top-wrap {
+  height: 60px;
+}
+
+.main__preview--table .top-margin {
+  height: 30px;
+}
+
+.main__preview--table .title {
+  height: 30px;
+}
+
+.main__preview--table .title__block {
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+.main__preview--table .title__td {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.main__preview--table .title__td div {
+  font-size: 0.7rem;
+  height: 1rem;
+  line-height: 3rem;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.main__preview--table .front-margin {
+  text-align: center;
+  height: 90px;
+}
+
+.main__preview--table .front-number {
+  height: 50px;
+}
+
+.main__preview--table .front-number__block {
+  text-align: right;
+}
+
+.main__preview--table .back-number {
+  height: 30px;
+}
+
+.main__preview--table .back-number__block {
+  text-align: center;
+  border-top: 2px solid white;
+}
+
+.main__preview--table .bottom-margin {
+  height: 25px;
+}
+
+.main__preview--table .bottom-wrap {
+  height: 60px;
+}
+
+.main__preview--table #front-title {
+  font-size: 1.4rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+}
+
+.main__preview--table .front-number__span {
+  font-size: 2rem;
+  margin-right: 0px;
+  color: white;
+}
+
+.main__preview--table .back-number__span {
+  font-size: 1rem;
+  color: white;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form__box {
+  width: 300px;
+}
+
+.form__box p {
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form__box--input {
+  margin-bottom: 20px;
+  color: gray;
+}
+
+.form__box--input label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.form__box--input label.debug {
+  font-weight: normal;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 1rem;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+          box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+}
+
+.form__box--input input {
+  width: 200px;
+  height: 30px;
+  border-radius: 1rem;
+  padding: 5px 10px;
+  border: none;
+  color: gray;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.form__box--input input:focus {
+  outline: none;
+}
+
+.form__box--input input[type='checkbox'] {
+  display: none;
+}
+
+.form__box--input input[type='checkbox']:checked ~ label {
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.form__box--radio {
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.form__box--radio label {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #e4e9ec;
+  -webkit-box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+          box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+  letter-spacing: 1px;
+}
+
+.form__box--radio label:hover {
+  cursor: pointer;
+}
+
+.form__box--radio .selected {
+  -webkit-box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+          box-shadow: inset 2px 2px 5px #cdd2d4, inset -2px -2px 5px #fbffff;
+}
+
+.form__box--radio input {
+  display: none;
+}
+
+.submit {
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: #e4e9ec;
+  border-radius: 1rem;
+  color: gray;
+  letter-spacing: 1px;
+  font-weight: bold;
+  -webkit-box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+          box-shadow: 2px 2px 5px #cdd2d4, -2px -2px 5px #fbffff;
+  outline: none;
+}
+
+.submit:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+html {
+  background-color: #e4e9ec;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.sideway {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+.serif {
+  font-family: serif;
+}
+
+.sans-serif {
+  font-family: sans-serif;
+}
+/*# sourceMappingURL=application.css.map */
