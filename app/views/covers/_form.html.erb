@@ -1,0 +1,87 @@
+<%= form_with url: pdf_path(format: :pdf) do |f| %>
+
+    <div class="form">
+      <div class="form__box">
+        <div class="form__box--input">
+          <%= f.label :title, 'タイトル' %>
+          <%= f.text_field :title, value: 'るろうに剣心' %>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :back_title, '背表紙タイトル' %>
+          <%= f.text_field :back_title, value: 'るろうに剣心' %>
+        </div>
+
+        <p>オプション</p>
+        <div class="form__box--radio">
+          <%= f.radio_button :title_vertical, true, id: 'vertical', checked: true %>
+          <%= f.label :title_vertical, '縦書き', for: 'vertical' ,id: 'vertical-label' ,class: 'selected'%>
+          <%= f.radio_button :title_vertical, false, id: 'sideway' %>
+          <%= f.label :title_vertical, '横書き', for: 'sideway', id: 'sideway-label' %>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :font_color, '文字色' %>
+          <%= f.text_field :font_color, value: '#ffffff' %>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :back_ground_color, '背景色' %>
+          <%= f.text_field :back_ground_color, value: '#000000' %>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :border_color, '線の色' %>
+          <%= f.text_field :border_color, value: '#ffffff' %>
+        </div>
+      </div>
+
+      <div class="form__box">
+        <p>フォント</p>
+        <div class="form__box--radio">
+            <%= f.radio_button :font, 0, id: 'sans-serif' %>
+            <%= f.label :font, 'ゴシック体', for: 'sans-serif' ,id: 'sans-serif-label'%>
+            <%= f.radio_button :font, 1, id: 'serif', checked: true %>
+            <%= f.label :font, '明朝体', for: 'serif', id: 'serif-label', class:'selected' %>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :number_of_turns, '巻数(何巻まで？)' %>
+          <%= f.number_field :number_of_turns, value: 10 %>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :title_font_size, 'タイトルの文字サイズ(1~5)' %>
+          <%= f.number_field :title_font_size, value: 2 ,max: 5, min: 1%>
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :width_of_front, '表表紙の横幅' %>
+          <%= f.number_field :width_of_front, step: '0.1', value: 11.5 %>
+          mm
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :width_of_back, '背表紙の横幅' %>
+          <%= f.number_field :width_of_back, step: '0.1', value: 1.4 %>
+          mm
+        </div>
+
+        <div class="form__box--input">
+          <%= f.label :height, '高さ' %>
+          <%= f.number_field :height, step: '0.1', value: 12.8 %>
+          mm
+        </div>
+
+
+        <div class="form__box--input" style="display:none;">
+          <%= f.check_box :debug, {}, true, false %>
+          <%= f.label :debug, class: 'debug'%>
+        </div>
+
+
+      </div>
+    </div>
+
+    <%= f.submit class: 'submit', value: 'Make it', formtarget: :_blank, 'data-disable-with': false %>
+<% end %>
