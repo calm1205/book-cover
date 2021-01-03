@@ -1,0 +1,128 @@
+<table class="<%= @font %>">
+
+  <%# ========== 最上部の余白 ==============%>
+  <tr class='lateral-roler'>
+    <td class="vertical-roler"></td>
+    <td class="left-wrap">1</td>
+    <td class="left-margin" style="width: <%= @width_of_f_margin %>px">2</td>
+    <td class="front-cover">3</td>
+    <td class="right-margin" style="width: <%= @width_of_f_margin %>px">4</td>
+    <td class="back-cover" style="width: <%= @width_of_back %>px">5</td>
+    <td class="behind-cover" style="width: <%= @width_of_front %>px">6</td>
+    <td class="right-wrap">7</td>
+  </tr>
+
+  <%# ========== 上部 折返し ==============%>
+  <tr class="top-wrap">
+    <td class="vertical-roler">1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 最上部の余白 ==============%>
+  <tr class="top-margin" style="height: <%= @height %>px">
+    <td class="vertical-roler">2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 表紙 背表紙 タイトル ==============%>
+  <tr class="title">
+    <td class="vertical-roler"></td>
+    <td></td>
+    <td></td>
+    <td class="title__block">
+      <span class="front-title" style="font-size: <%= @title_font_size %>rem;" >
+        <%= @main_title %>
+      </span>
+    </td>
+    <td></td>
+    <td rowspan='2' valign="top" class="title__td">
+      <% @back_titles.each do |back| %>
+        <div class="<%= @title_vertical %>" ><%= back %></div>
+      <% end %>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 表紙 中央 ==============%>
+  <tr class="front-margin">
+    <td class="vertical-roler">3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 表表紙 巻数 ==============%>
+  <tr class="front-number">
+    <td class="vertical-roler">4</td>
+    <td></td>
+    <td></td>
+    <td class="front-number__block">
+      <span class="front-number__span">
+        <%= turn %>
+      </span>
+    </td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 背表紙の巻数 ==============%>
+  <tr class="back-number">
+    <td class="vertical-roler">5</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td class="back-number__block">
+      <span class="back-number__span">
+        <%= turn %>
+      </span>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 表紙下部の余白 ==============%>
+  <tr class="bottom-margin">
+    <td class="vertical-roler">6</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <%# ========== 最下部の余白 ==============%>
+  <tr class="bottom-wrap">
+    <td class="vertical-roler">7</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<div class="page-break"></div>

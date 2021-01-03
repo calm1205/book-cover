@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is your BookCover</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= wicked_pdf_stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="original-body">
+    <%= yield %>
+  </body>
+</html>

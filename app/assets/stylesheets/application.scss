@@ -1,0 +1,33 @@
+@import 'reset';
+@import 'book-cover';
+@import 'book-cover-preview';
+@import 'form';
+
+html{
+  background-color: #e4e9ec;
+}
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+  color: gray;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+// 横書き
+.sideway{
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+// 明朝体
+.serif{
+  font-family: serif;
+}
+
+// ゴシック
+.sans-serif{
+  font-family: sans-serif;
+}

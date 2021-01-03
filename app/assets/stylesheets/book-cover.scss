@@ -1,0 +1,117 @@
+body{
+  margin: 0;
+}
+.original-body{
+  background-color: white;
+}
+
+.page-break {
+  display:block;
+  clear:both;
+  page-break-after:always;
+}
+table {
+  border-collapse: collapse;
+  background-color: black;
+}
+table td {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// ルーラー＆横幅の設定
+.lateral-roler{
+  td{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-top: none;
+    border-right: solid 1px lightgray;
+    color: lightgray;
+    text-align: center;
+  }
+  // 横のサイズ設定
+  .left-wrap    { width: 189px;   } // 40mm
+  .left-margin  { width: 47px;    } // 10mm
+  .front-cover  { width: 447px;   } // 95mm
+  .right-margin { width: 47px;    } // 10mm
+  .back-cover   { width: 66px;    } // 14mm
+  .behind-cover { width: 545px;   } // 115mm
+  .right-wrap   { width: 189px;   } // 40mm
+}
+
+// ルーラー＆縦幅の設定
+.vertical-roler{
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-left: none;
+  border-top: solid 1px lightgray;
+  border-bottom: solid 1px lightgray;
+  color: lightgray;
+  text-align: center;
+}
+.top-wrap{
+  height: 187.5px;
+}
+.top-margin{
+  height: 94px;
+}
+.title{
+  height: 141px;
+  &__block{
+    text-align: center;
+    border-bottom: 5px solid white;
+  }
+  &__td{
+    flex-direction: column;
+    text-align: center;
+    line-height: 6rem;
+    div{
+      font-size: 2.5rem;
+      height: 2.5rem;
+      color: white;
+      margin-bottom: 10px;
+    }
+  }
+}
+.front-margin{
+  text-align: center;
+  height: 282px;
+}
+.front-number{
+  height: 141px;
+  &__block{
+    text-align: right;
+  }
+  &__span{
+    font-size: 5rem;
+    margin-right: 50px;
+    color: white;
+  }
+}
+.back-number{
+  height: 93.75px;
+  &__block{
+    text-align: center;
+    border-top: 3px solid white;
+  }
+  &__span{
+    font-size: 3rem;
+    color: white;
+  }
+}
+.bottom-margin{
+  height: 75px;
+}
+.bottom-wrap{
+  height: 187.5px;
+}
+
+// タイトル文字
+.front-title{
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  color: white;
+}
