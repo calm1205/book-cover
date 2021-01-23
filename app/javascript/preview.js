@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function (){
   const background_color_form = document.getElementById('back_ground_color');
   background_color_form.addEventListener('input', (e)=>{
     const background_color = e.target.value;
-    const table = document.getElementsByClassName('preview')[0];
+    const table = document.getElementsByClassName('main__preview')[0];
     table.style.background = background_color;
   });
 
